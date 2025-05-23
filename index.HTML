@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number Game + Email</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- EMAIL SECTION -->
+    <p>Function to send mail inside HTML of a script.</p>
+    <div class="subscribe">
+        <h2 class="crewtitle">Do you want more information about our project?</h2>
+        <h4>Type your email to subscribe and get full access to your content!</h4>
+
+        <form id="emailForm" action="javascript:void(0);" method="post">
+            <input type="email" name="email" id="email" placeholder="mail@example.com" required />
+            <input class="subscribebutton" type="submit" value="Send" />
+        </form>
+
+        <div class="mailconfirmation">
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- GUESS NUMBER SECTION -->
+    <h2>An additional challenge for you!</h2>
+    <p>Type a number between 0 and 100. Try to guess the number!</p>
+
+    <input type="number" id="userGuess" placeholder="Type your number">
+    <button onclick="checkGuess()">Guess now!</button>
+
+    <p id="resultMessage"></p>
+
+    <!-- Script files -->
+    <script src="script.js"></script>
+</body>
+</html>
